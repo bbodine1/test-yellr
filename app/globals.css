@@ -1,0 +1,63 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-primary: #eaeaea;
+  --color-accent: #fed831;
+  --color-secondary: #317cff;
+  --color-background: #ecf0f1;
+  --color-ink: #34495e;
+  --color-navy: #1a4288;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Figtree", sans-serif;
+}
+
+body {
+  color: var(--color-ink);
+  background: var(--color-background);
+  font-family: var(--font-body);
+}
+
+.section-shell {
+  @apply px-6 py-16 lg:px-16;
+}
+
+.card {
+  @apply rounded-2xl border border-primary bg-white/80 shadow-sm backdrop-blur;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, rgba(49, 124, 255, 0.12), rgba(254, 216, 49, 0.16)),
+    radial-gradient(circle at 20% 20%, rgba(26, 66, 136, 0.3), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(254, 216, 49, 0.35), transparent 40%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(236, 240, 241, 0.9));
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-navy/90 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
+}
+
+.button-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-secondary bg-white/80 px-5 py-3 text-sm font-semibold text-secondary transition hover:-translate-y-0.5 hover:bg-secondary hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
+}
+
+.section-heading {
+  @apply text-3xl font-bold text-navy md:text-4xl;
+}
+
+.section-subtitle {
+  @apply text-base text-ink/80 md:text-lg;
+}
+
+.grid-highlight {
+  @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.faq-item {
+  @apply rounded-xl border border-primary bg-white/70 p-4 shadow-sm;
+}
