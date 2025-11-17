@@ -1,0 +1,37 @@
+:root {
+  color-scheme: light;
+  --background: #0b132b;
+  --panel: #1c2541;
+  --accent: #5bc0be;
+  --muted: #cdd5e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1c2541 0, rgba(28, 37, 65, 0) 35%),
+    radial-gradient(circle at 80% 10%, #5bc0be 0, rgba(91, 192, 190, 0) 30%),
+    radial-gradient(circle at 80% 80%, #3a506b 0, rgba(58, 80, 107, 0) 35%),
+    var(--background);
+  color: white;
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
