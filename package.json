@@ -1,0 +1,32 @@
+{
+  "name": "test-yellr",
+  "version": "0.1.0",
+  "description": "Ulman Foundation website built with Next.js 15, Tailwind CSS 4, and shadcn/ui.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "nextjs",
+    "tailwindcss",
+    "shadcn",
+    "lucide",
+    "ulman foundation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.442.0",
+    "next": "^15.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^4.0.0-alpha.18"
+  }
+}
